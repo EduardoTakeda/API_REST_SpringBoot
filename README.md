@@ -55,9 +55,9 @@
 ##### marcar a interface com a anotação @Mapper para que o mapstruct entenda que vai processar essa classe
 ##### é necessário ter o anotation processors para que ao chamar o metodo toModel será pego todos os dados do DTO para serem mapeados
 ##### Para converetr um DTO para um banco de dados por convenção se faz o uso do "toModel" , é preciso utilizar esse nome para que o mapstruct faça essa conversão
-##### @Mapping(target="birthDate", source="birthDate", dateFormat="dd-MM-yyyy) para que o mapstruct faça a conversão correta dos dados da data de aniversário(pegar a string e converter em dados para o banco de dados)
+##### @Mapping(target="birthDate", source="birthDate", dateFormat="dd-MM-yyyy") para que o mapstruct faça a conversão correta dos dados da data de aniversário(pegar a string e converter em dados para o banco de dados)
 #####
-##### @AllArgsConstructor(onConstructor = @__(@Autowired)) para tirar o construtor padrão do @Autowired(classe do PersonController)
+##### @AllArgsConstructor(onConstructor = @__(@Autowired)) para tirar o construtor padrão  @Autowired(classe do PersonController)
 ##### @AllArgsConstructor(onConstructor = @__(@Autowired)) na classe PersonService a mesma coisa
 
 
